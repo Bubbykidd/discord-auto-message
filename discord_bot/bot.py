@@ -1,20 +1,10 @@
-from http.client import HTTPSConnection
-import sys
-from json import dumps
-from time import sleep
-from random import random
-
-file = open("info.txt")
-text = file.read().splitlines()
 
 if len(sys.argv) > 1 and sys.argv[1] == "--setall" and input("Configure bot? (y/n)") == "y":
-    file.close()
-    file = open("info.txt", "w")
-    text = []
-    text.append(input("User agent: "))
-    text.append(input("Discord token: "))
-    text.append(input("Discord channel URL: "))
-    text.append(input("Discord channel ID: "))
+
+    text = [(print)"testing 1"]
+    text.append(input("WZKD BOT"))
+    text.append(input("MTAxNTA3NTgyNjczMzE2MjUyOA.Gth9EK.AYbM15xcKpqb_OMRL_errpAKov3vNWlXGvBytY"))
+    text.append(input("964377527105765446"))
 
     for parameter in text:
         file.write(parameter + "\n")
@@ -40,8 +30,8 @@ elif len(sys.argv) > 1 and sys.argv[1] == "--setauth" and input("Set authenticat
     text = text[2:4]
     file.close()
     file = open("info.txt", "w")
-    text.insert(0, input("Discord token: "))
-    text.insert(0, input("User agent: "))
+    text.insert(0, input("MTAxNTA3NTgyNjczMzE2MjUyOA.Gth9EK.AYbM15xcKpqb_OMRL_errpAKov3vNWlXGvBytY"))
+    text.insert(0, input("WZKD BOT"))
     for parameter in text:
         file.write(parameter + "\n")
 
